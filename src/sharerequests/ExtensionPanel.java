@@ -29,6 +29,7 @@ public class ExtensionPanel
         JPanel infoPanel = new JPanel(new BorderLayout());
         JLabel explainer = new JLabel();
         explainer.setHorizontalAlignment(SwingConstants.LEFT);
+        explainer.putClientProperty("html.disable", null);
         infoPanel.add(explainer, BorderLayout.WEST);
         explainer.setText("<html>This extension allows you to create shareable links to Burp Suite requests. <br>" +
                 "When others visit the generated links, in a browser proxied by Burp Suite with this extension installed, <br>" +
